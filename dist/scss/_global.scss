@@ -1,0 +1,47 @@
+html,
+body {
+	height: 100%;
+}
+
+html{
+	scroll-behavior:smooth;
+	word-break: break-word;
+}
+
+body{
+	height: 6000px;
+	background: #FAFBFF;
+	font-family: $primary-font;
+	color: $black-color;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 500;
+}
+
+section{
+	overflow: hidden;
+}
+
+*:before,
+*:after,
+a,
+button,
+svg,
+span,
+li,
+p{
+    transition: $transition;
+}
+
+a{
+	display: inline-block;
+}
+
+button{
+	border: none;
+	cursor: pointer;
+}
+
+img{
+	object-fit: cover;
+}
