@@ -9,7 +9,6 @@ html{
 }
 
 body{
-	height: 6000px;
 	background: #FAFBFF;
 	font-family: $primary-font;
 	color: $black-color;
@@ -50,4 +49,29 @@ button{
 
 img{
 	object-fit: cover;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+input {
+	background: #F9FBFF;
+	border-radius: 10px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: -0.01em;
+	border: none;
+	padding: 10px;
+	color: #B5B7C0;
+
+	&:focus {
+		outline: none;
+	}
+
+	&::placeholder {
+		color: #B5B7C0;
+	}
 }
