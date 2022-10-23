@@ -247,7 +247,7 @@ input::placeholder {
 }
 
 .logo {
-  margin-bottom: 53px;
+  margin-bottom: 47px;
   display: inline-block;
 }
 .logo img {
@@ -470,7 +470,7 @@ input::placeholder {
   margin-right: 10px;
 }
 .customers__item {
-  padding: 19px 0;
+  padding: 19px 0 20px;
   border-bottom: 1px solid #EEEEEE;
   display: -webkit-box;
   display: -ms-flexbox;
