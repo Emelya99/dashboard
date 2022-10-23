@@ -21,10 +21,6 @@
         flex-direction: column;
     }
 
-    .logo {
-        margin-bottom: 53px;
-    }
-
     &__list {
         margin-bottom: 53px;
 
@@ -107,6 +103,7 @@
 // Logo
 .logo {
     @include flex(flex,null,flex-end,null);
+    margin-bottom: 53px;
 
     & span {
         color: #838383;
@@ -250,30 +247,34 @@
     margin-bottom: 30px;
 
     &-name {
-        max-width: 157px;
+        max-width: 147px;
     }
 
     &-company {
-        max-width: 116px;
+        max-width: 106px;
     }
 
     &-phone {
-        max-width: 141px;
+        max-width: 131px;
     }
 
     &-email {
-        max-width: 192px;
+        max-width: 182px;
     }
 
     &-country {
-        max-width: 125px;
+        max-width: 115px;
+    }
+
+    &__arrow {
+        display: none;
     }
 
     &-status {
         max-width: 80px;
         text-align: center;
 
-        & span {
+        &-btn {
             padding: 3px 5px;
             border-radius: 4px;
             width: 100%;
@@ -312,6 +313,10 @@
             color: $grey-color;
             width: 100%;
             letter-spacing: -0.01em;
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
         }
     }
 
@@ -332,6 +337,14 @@
 
         & li {
             width: 100%;
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+
+        .hide-desktop {
+            display: none;
         }
     }
 }

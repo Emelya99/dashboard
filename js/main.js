@@ -10,4 +10,10 @@ $(function () {
     $('.tabs__pagination li').removeClass('active');
     $(this).addClass('active');
   });
+
+  // Customers arrow
+  $('.customers-name').on('click', function () {
+    $(this).find('.customers__arrow').toggleClass('active');
+    $(this).parent('.customers__item').toggleClass('active');
+  });
 });

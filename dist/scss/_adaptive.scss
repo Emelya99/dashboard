@@ -1,5 +1,241 @@
+@media(max-width: 1400px) {
+
+    // Sidebar
+    .sidebar {
+        width: 250px;
+        padding: 30px 15px 0px;
+
+        &__bottom {
+            padding-bottom: 45px;
+        }
+    }
+
+    // Logo
+    .logo {
+        margin-bottom: 47px;
+
+        & img {
+            max-width: 170px;
+        }
+    }
+
+    // Tabs
+    .tabs {
+
+        &__wrapper {
+            margin-left: 250px;
+            padding: 30px;
+        }
+
+        &__item {
+            padding: 45px 30px;
+        }
+
+        &__input {
+            margin-right: 0;
+        }
+    }
+}
+
+@media(max-width:1250px) {
+    
+    // Customers
+    .customers {
+
+        &__header {
+
+            & li {
+                font-size: 12px;
+
+                & span {
+                    display: none;
+                }
+            }
+        }
+
+        &-name {
+            max-width: 100px;
+        }
+    
+        &-company {
+            max-width: 80px;
+        }
+    
+        &-phone {
+            max-width: 100px;
+        }
+    
+        &-email {
+            max-width: 149px;
+        }
+    
+        &-country {
+            max-width: 95px;
+        }
+
+        &__item {
+
+            & li {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
 @media(max-width:$tablet){
 
+    // Sidebar
+    .sidebar {
+
+        &__bottom {
+            padding-bottom: 30px;
+        }
+    }
+
+    // Tabs
+    .tabs {
+
+        &__wrapper {
+            padding: 30px 15px;
+        }
+
+        &__top {
+            margin-bottom: 30px;
+
+            & h2 {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        &__item {
+            padding: 30px 15px;
+        }
+
+        &__bottom {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+        &__total {
+            padding: 0;
+        }
+
+        &__pagination {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+    }
+
+    // Customers
+    .customers {
+        margin-bottom: 25px;
+
+        &-name {
+            max-width: 100%;
+            position: relative;
+            cursor: pointer;
+        }
+
+        &-company {
+            max-width: 100%;
+        }
+    
+        &-phone {
+            max-width: 100%;
+        }
+    
+        &-email {
+            max-width: 100%;
+        }
+    
+        &-country {
+            max-width: 100%;
+        }
+
+        &-status {
+            max-width: 100%;
+            text-align: left;
+
+            &-btn {
+                width: 80px;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        &__arrow {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            transform: rotate3d(0, 0, 0, 190deg);
+
+            & svg {
+                fill: #292D32;
+
+                &:hover {
+                    fill: $main-color;
+                }
+            }
+
+            &.active {
+                transform: rotate3d(1, 0, 0, 190deg);
+            }
+        }
+
+        &__header {
+            padding-bottom: 10px;
+
+            & li {
+                font-size: 14px;
+
+                &:not(:first-child) {
+                    display: none;
+                }
+
+                & span {
+                    display: inline-block;
+                }
+            }
+        }
+
+        &__item {
+            padding: 15px 0;
+            flex-direction: column;
+
+            & li {
+                font-size: 14px;
+
+                &:not(:last-child) {
+                    margin: 0;
+                }
+
+                &:not(:first-child) {
+                    margin: 10px 0 0 0;
+                    display: none;
+                }
+            }
+
+            .hide-desktop {
+                color: $grey-color;
+                width: 150px;
+                display: inline-block;
+            }
+
+            &.active {
+
+                & li {
+
+                    &:not(:first-child) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:$mobile){
